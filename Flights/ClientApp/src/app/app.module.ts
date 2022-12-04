@@ -7,8 +7,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
 import { SearchFlightsComponent } from './search-flights/search-flights.component';
-import { TestComponent } from './test/test.component';
-import { TestingComponent } from './testing/testing.component';
+
 
 
 @NgModule({
@@ -16,8 +15,7 @@ import { TestingComponent } from './testing/testing.component';
     AppComponent,
     NavMenuComponent,
     SearchFlightsComponent,
-    TestComponent,
-    TestingComponent
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
