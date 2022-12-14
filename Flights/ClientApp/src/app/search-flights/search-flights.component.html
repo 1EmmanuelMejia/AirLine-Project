@@ -1,7 +1,79 @@
-<p>Search Flights</p>
+<h5 class="text-md-center m-5">Search for Flights</h5>
 
 
-<!-- Creating a for loop to display airline from search flight component-->
-<div *ngFor="let flight of searchResult">
-  {{flight}} <!--data binding from the flight -->
+<!--wrapper for class-->
+<div class="m-5 d-grid gap-3">
+
+  <!-- Row created with two columns for DESTINATION info-->
+  <div class="row">
+
+    <div class="col">
+      <div class="form-floating">
+        <input placeholder="From" class="form-control" />
+        <label class="text-primary form-label">From</label>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-floating">
+        <input placeholder="Destination" class="form-control" />
+        <label class="text-primary form-label">Destination</label>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <!-- Row created with two columns for DATE info-->
+  <div class="row">
+
+    <div class="col">
+      <div class="form-floating">
+        <input type="date" placeholder="From Date" class="form-control" />
+        <label class="text-primary form-label">From date</label>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="form-floating">
+        <input type="date" placeholder="To Date" class="form-control" />
+        <label class="text-primary form-label">To Date</label>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!--Row created with two column to display text field and icons-->
+  <div class="row">
+
+    <div class="col text-end">
+      <label class="form-label text-primary mt-2">
+        Number of Passengers
+      </label>
+    </div>
+
+    <div class="col">
+      <div class="input-group">
+        <div class="input-group-text">For</div>
+        <input class="form-control" type="number" placeholder="1"/>
+        <div class="input-group-text">Passenger</div>
+
+        <button type="submit" class="btn-primary btn">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+    </div>
+
+   </div>
+  <!--wrapper class ends-->
 </div>
+
+
+    <!-- Creating a for loop to display airline from search flight component-->
+    <div *ngFor="let flight of searchResult">
+      {{flight}} <!--data binding from the flight -->
+    </div>
+
+    
